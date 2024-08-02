@@ -80,7 +80,7 @@ async function qr() {
       let sessionXeon = fs.readFileSync('./sessions/creds.json');
       await delay(1000 * 2);
       const xeonses = await XeonBotInc.sendMessage(XeonBotInc.user.id, { document: sessionXeon, mimetype: "application/json", fileName: "creds.json" });
-      await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: "⚠️Do not share this file with anybody⚠️\n\n┌─❖\n│ Welcome To Queen Spriky Bot Family 😽\n│©Queen Spriky WhatsApp Bot" }, { quoted: xeonses });
+      await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: "⛔ Do not share this file with anybody ⛔\n\n┌─❖\n│ Welcome To Queen Spriky Bot Family 😽\n│©Queen Spriky WhatsApp Bot" }, { quoted: xeonses });
       await delay(1000 * 2);
       process.exit(0);
     }
